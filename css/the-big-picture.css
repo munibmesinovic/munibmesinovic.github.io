@@ -1,0 +1,49 @@
+/*!
+ * Start Bootstrap - The Big Picture (https://startbootstrap.com/templates/the-big-picture)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-the-big-picture/blob/master/LICENSE)
+ */
+body {
+  background: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+ p {
+  font-family: 'Raleway', sans-serif;
+ }
+
+ h1 { 
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  color: #3772FF;
+ }
+
+ .burgundy-filter:hover {
+  filter: invert(35%) sepia(64%) saturate(2640%) hue-rotate(213deg) brightness(101%) contrast(104%);}
+
+  .blue-filter:hover {
+    filter: invert(35%) sepia(64%) saturate(2640%) hue-rotate(213deg) brightness(101%) contrast(104%);}
+
+    
+a {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color:#7A28CB;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #3772FF;
+
+}
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: #F7ECFE;
+}
+
+::selection {
+  color: black;
+  background: #F7ECFE;
+}
