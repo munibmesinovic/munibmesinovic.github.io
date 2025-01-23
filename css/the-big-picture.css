@@ -35,7 +35,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #3772FF;
+  color: #000080;
 
 }
 ::-moz-selection { /* Code for Firefox */
