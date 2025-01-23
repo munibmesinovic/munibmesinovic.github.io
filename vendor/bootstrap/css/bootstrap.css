@@ -195,6 +195,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  float: left;
 }
 
 svg {
@@ -610,6 +611,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  float: left;
 }
 
 .no-gutters {
