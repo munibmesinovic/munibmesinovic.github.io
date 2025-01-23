@@ -30,12 +30,12 @@ body {
 a {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  color:#000080;
+  color:#3772FF;
 }
 
 a:hover {
   text-decoration: none;
-  color: #000080;
+  color: #3772FF;
 
 }
 ::-moz-selection { /* Code for Firefox */
