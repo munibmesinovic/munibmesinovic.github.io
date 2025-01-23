@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Lujain Ibrahim</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/the-big-picture.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style> 
+  /* -----------------------------------
+        Gallery Section
+  --------------------------------------*/
+  .portfolio-section {
+    padding: 50px 0;
+    background-color: #000;
+  }
+  .portfolio-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .portfolio-menu {
+    text-align: center;
+  }
+  .control {
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #343a40;
+    border-radius: 3px;
+    margin: 5px;
+    cursor: pointer;
+    -webkit-transition: all 05s ease;
+    -moz-transition: all 05s ease;
+    -ms-transition: all 05s ease;
+    -o-transition: all 05s ease;
+    transition: all 0.5s ease;
+  }
+  .control:hover {
+    background: #343a40;
+  }
+  .mixitup-control-active {
+    color: #fff;
+    background: #343a40;
+  }
+  .fancybox-container button:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  .portfolio-item {
+    padding-top: 30px;
+  }
+  .pd {
+    padding: 0;
+    padding: 10px;
+  }
+  .pd img {
+    height: 180px;
+    transition: all 0.5s;
+  }
+  .portfolio-overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    visibility: hidden;
+    transition: all 0.5s;
+    transform: scale(0);
+  }
+  .portfolio-overlay p,
+  .portfolio-overlay a {
+    position: relative;
+    z-index: 4;
+  }
+  .portfolio-overlay::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 0;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    transition: 50ms height ease 150ms;
+    z-index: 3;
+  }
+  .portfolio-overlay::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 0;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    transition: 100ms width ease 200ms;
+    z-index: 3;
+  }
+  .portfolio-item:hover .portfolio-overlay::before {
+    width: 80%;
+    height: 80%;
+    border-top: 1px solid #50977f;
+    border-right: 1px solid #50977f;
+    transition: width 0.1s ease 0.3s, height 0.1s ease 0.5s;
+  }
+  .portfolio-item:hover .portfolio-overlay::after {
+    width: 80%;
+    height: 80%;
+    border-bottom: 1px solid #50977f;
+    border-left: 1px solid #50977f;
+    transition: width 0.1s ease 0.6s, height 0.1s ease 0.7s;
+  }
+  .portfolio-item li:hover .portfolio-overlay {
+    visibility: visible;
+    transform: scale(1);
+  }
+  .portfolio-overlay .category {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+  }
+  .portfolio-overlay .magnify-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background: #50977f;
+    margin: 0 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.25s;
+  }
+  .portfolio-overlay .magnify-icon:hover {
+    background: #000;
+  }
+  .portfolio-overlay .magnify-icon p span i {
+    font-size: 15px;
+    color: #fff;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  
+  /*******Responsive media query******/
+  
+  /* Extra small devices (portrait phones, less than 576px)*/
+  
+</style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="mailto:lujain.ibrahim@nyu.edu">can't find what you're looking for? get in touch...</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item active">
+            <li class="nav-item active">
+            <a class="nav-link" href="work.html">Work</a>
+            <span class="sr-only">(current)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <!-- Page Content -->
+  <section>
+    <div class="container">
+        <h1 class="mt-5" style="text-align: center;">Lujain Ibrahim - Portfolio</h1>
+
+      <div class="row">
+        <div class="col-lg-9">
+          <!-- <p> Hello again!</p> -->
+        </div>   
+      </div>
+      <!-- <div class="portfolio-menu mt-2 mb-4">
+        <nav class="controls">
+          <button type="button" class="control outline" data-filter="all">All</button>
+          <button type="button" class="control outline" data-filter=".web">Web Design</button>
+          <button type="button" class="control outline" data-filter=".dev">Writing</button>
+          <button type="button" class="control outline" data-filter=".wp">Data</button>
+        </nav>
+      </div> -->
+      <h1 class="mt-5">Web Design</h1>
+      <div class="card-deck">
+        <div class="card">
+            <video width="100%" autoplay muted loop>
+                <source src="multiplicity-2.mp4" type="video/mp4">
+                <!-- <source src="movie.ogg" type="video/ogg"> -->
+              Your browser does not support the video tag.
+              </video>
+          <div class="card-body">
+            <h5 class="card-title">Multiplicity</h5>
+            <p class="card-text">I co-founded Multiplicity, a digital curation of articles on the internet's place in our lives on both a personal and socio-political level as young people in different parts of the world. We critically examine the internet's influence and explore ways to build a healthier and more equitable internet. Our team came from 16 countries: Palestine, Jordan, Egypt, Lebanon, Nepal, Bosnia and Herzegovina, New Zealand, South Korea, the US, Hungary, Northern Ireland, India, Colombia, Sudan, Iraq, and China. </p>
+            <p>In addition to managing the project, providing editorial support, and co-developing the website as a whole, I lead the development and design of the article web pages. Here are my favorite 3 articles that I designed and built to be interactive, informative, and fun:</p>
+            <p>1. <a href="https://www.multiplicity.tech/articles/mute-a-country.html" target="_blank">How to Mute a Country</a> (words by Dervla O'Brien)</p>
+            <p>2. <a href="https://www.multiplicity.tech/articles/delivery-nation.html" target="_blank">Delivery Nation: Challenging the Food Delivery Monopoly in South Korea</a> (words by Jihyun Kim)</p>
+            <p>3. <a href="https://www.multiplicity.tech/articles/exile-in-the-digital-age.html" target="_blank">Reflections on Exile in the Digital Age</a> (words by Lujain Ibrahim)</p>
+            <p><b>Languages & libraries:</b> HTML, CSS, JavaScript (JSON, Leaflet, Tabulator, ApexCharts, & more...)</p>
+            <a href="https://www.multiplicity.tech" class="btn btn-primary" target="_blank">EXPLORE</a>
+            <a class="alt-link" href="https://github.com/multiplicitytech/multiplicitytech.github.io" target="_blank"><img src="img/github.png" style="height: 2rem" class="burgundy-filter" alt="github.com/multiplicitytech"></a></p>
+
+            <p class="card-text"><small class="text-muted">2020-2021</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <video width="100%" autoplay muted loop>
+            <source src="coptico_3.mov" type="video/mp4">
+            <!-- <source src="movie.ogg" type="video/ogg"> -->
+          Your browser does not support the video tag.
+          </video>
+        <div class="card-body">
+              <h5 class="card-title">Coptico</h5>
+              <p class="card-text">Coptico Technologies was a fake company selling innovative products meant to solve the Arab world's peace, coexistence, gender inequality, and social solidarity issues. It was the center of an art exhbit critiquing the productization and commercialization of social issues. The exhbit consisted of the products in their physical form, short mockumentaries to advertize each product, and animated chatbots of all the characters in the mockumentaries. Using Sitepal to create avatars of the actors and using the Pandorabots API, I adapted 4 film scripts into 300+ questions and answers in Artificial Intelligence Markup Language (AIML) and embedded the bots onto the exhibit's website. Each of the 6 animated bots were placed on an tablet in a designated area for vistors to talk to them and ask questions about the products as well as the state of the Arab world today. Unfortunately, the bots are no longer live but here are a few pictures/videos and the Github repository.</p>
+              <p><b>Languages & libraries:</b> HTML, CSS, JavaScript (using APIs), AIML</p>
+
+              <a href="https://www.copticogroup.com/" target="_blank" class="btn btn-primary">EXPLORE</a>
+              <a class="alt-link" href="https://github.com/lujainibrahim/Coptico" target="_blank"><img src="img/github.png" style="height: 2rem" class="burgundy-filter" alt="github.com/lujainibrahim/Coptico"></a></p>
+
+              <p class="card-text"><small class="text-muted">2018</small></p>
+            </div>
+          </div>
+    </div>
+      <h1 class="mt-5">Data</h1>
+      <div class="card-deck" style="margin-top: 1rem;">
+        <div class="card">
+            <img class="card-img-top" src="capstone.gif" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Explainable Prediction of Acute Myocaridal Infarction using Machine Learning and Shapley Values</h5>
+              <p class="card-text">I completed my group undergraduate senior thesis on deep learning applications for health data. We co-authored and published a paper with our results in IEEE Access. It is the first paper to be published utilizing the <a href="http://ecgview.org/" target="_blank">ECG-ViEW II </a>dataset for a machine learning application in healthcare. In addition to processing the data, I built, using Python, the convolutional neural network classifier we used to achieve competitive results.</p>
+              <p><b>Languages & libraries:</b> Python (Keras/TensorFlow, scikit-learn)</p>
+
+              <a href="https://ieeexplore.ieee.org/document/9268965" class="btn btn-primary" target="_blank">READ</a>
+              <a class="alt-link" href="https://github.com/lujainibrahim/ecg-view-II-machine-learning" target="_blank"><img src="img/github.png" style="height: 2rem" class="burgundy-filter" alt="github.com/lujainibrahim/ecg-view-II-machine-learning"></a></p>
+
+              <p class="card-text"><small class="text-muted">2019-2020</small></p>
+            </div>
+          </div>
+      <div class="card">
+        <video width="100%" autoplay muted loop>
+          <source src="aaai.mov" type="video/mp4">
+          <!-- <source src="movie.ogg" type="video/ogg"> -->
+        Your browser does not support the video tag.
+        </video>
+      <div class="card-body">
+          <h5 class="card-title">Modeling Simultaneous Preferences for Age, Gender, Race, and Professional Profiles in Government-Expense Spending: A Conjoint Analysis</h5>
+          <p class="card-text">During my one-year research assistantship, I led a research project and first-authored a research paper published in a AAAI conference on modelling biases in human decision making. The project involved data collection, data analysis, and data visualization using various Python statistical and visualization tools. It also involved full stack web development as well as setting up and managing a PostgreSQL database. </p>
+          <p><b>Languages & libraries:</b> Full stack web development (HTML, CSS, JavaScript, Python Flask), Python (matplotlib, geopandas, statsmodels, scikit-learn), PostgreSQL</p>
+          <a href="https://ojs.aaai.org/index.php/HCOMP/article/view/18942" target="_blank" class="btn btn-primary">READ</a>
+          <a class="alt-link" href="https://github.com/x-labs-xyz/aaai-hcomp21-preferences
+          " target="_blank"><img src="img/github.png" style="height: 2rem" class="burgundy-filter" alt="github.com/x-labs-xyz/aaai-hcomp21-preferences"></a></p>
+
+          <p class="card-text"><small class="text-muted">2020-2021</small></p>
+        </div>
+      </div>
+      </div>
+      <h1 class="mt-5">Writing</h1>
+
+      <div class="card-deck" style="margin-top: 1rem;">
+
+        <div class="card">
+          <img class="card-img-top" src="labocine.png" alt="Card image cap" >
+          <div class="card-body">
+            <h5 class="card-title">Labocine</h5>
+            <p class="card-text">Labocine is an Imagine Science Films initiative to extend film programming to a broader and more diverse audience. It is a science video on demand platform & online monthly magazine comprising over 3,000 curated science films. For several years, I wrote close to 20 articles reviewing various films on the platform. My favorite is my review of Sons of Monarchs — a Sundance award-winning film on migration, politics, and the monarch butterflies.</p>
+            <a href="https://www.labocine.com/spotlight/son-of-monarchs-riding-the-science-new-wave" target="_blank" class="btn btn-primary">READ</a>
+            <p class="card-text"><small class="text-muted">2018-2021</small></p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <img class="card-img-top" src="ainow.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">AI Now</h5>
+            <p class="card-text">For AI Now's project "A New AI Lexicon," aimed at responding and challenging dominant AI discourse, I wrote an article investigating the Arabic etymological and lexical origins of the word “justice” and other terms in its purview. I explored how these definitions challenge, expand on, and align with current algorithmic reasoning and interpretations of fairness and justice in critical AI discourse. </p>
+            <a href="https://medium.com/a-new-ai-lexicon/a-new-ai-lexicon-in-justice-920d3c9f810c" target="_blank" class="btn btn-primary">READ</a>
+            <p class="card-text"><small class="text-muted">2021</small></p>
+          </div>
+        </div>
+        </div>
+  </section>
+  <br><br>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
